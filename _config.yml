@@ -1,3 +1,4 @@
 destination: ./_site
 timezone:    America/New_York
+lsi:         false
 pygments:    true
