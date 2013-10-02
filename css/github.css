@@ -121,6 +121,10 @@ span.large {
   color: #788991;
 }
 
+.introduction a {
+  text-decoration: underline;
+}
+
 .section {
   text-align: left;
 }
@@ -138,6 +142,10 @@ div.contact {
 .contact form, .contact .subtext {
   font-family: "source-sans-pro";
   color: #788991;
+}
+
+.contact form {
+  padding-top: 30px;
 }
 
 div.contact input[type=text] {
