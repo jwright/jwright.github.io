@@ -17,6 +17,29 @@
   margin-right: 20px;
 }
 
+a {
+  color: #9483ab;
+}
+
+a:hover {
+  color: #7a6596;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #9483ab;
+  border-color: #7a6596;
+}
+
+.btn-primary:hover {
+  background-color: #7a6596;
+  border-color: #7a6596;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+  background-color: #9483ab !important;
+}
+
 div.container {
   padding-bottom: 100px;
 }
@@ -33,6 +56,8 @@ div.header {
 div.header h1 {
   padding-top: 40px;
   margin-bottom: -10px;
+  font-weight: 600;
+  font-size: 5em;
 }
 
 div.header i {
@@ -75,10 +100,25 @@ span.large {
   font-weight: bold;
 }
 
-.introduction h2 {
-  border-top: 5px solid #000;
-  padding-top: 20px;
+.introduction h2, .contact h2 {
+  color: #788991;
+  font-family: "proxima-nova-soft";
   font-style: italic;
+}
+
+.introduction h2 {
+  border-top: 5px solid #788991;
+  padding-top: 20px;
+}
+
+.introduction h3 {
+  font-family: "proxima-nova-soft";
+  font-size: 1.4em;
+}
+
+.introduction .reason {
+  font-family: "source-sans-pro";
+  color: #788991;
 }
 
 .section {
@@ -90,9 +130,14 @@ span.large {
 }
 
 div.contact {
-  border-top: 5px solid #000;
+  border-top: 5px solid #788991;
   padding-top: 20px;
   margin-top: 40px;
+}
+
+.contact form, .contact .subtext {
+  font-family: "source-sans-pro";
+  color: #788991;
 }
 
 div.contact input[type=text] {
@@ -113,6 +158,10 @@ div.contact textarea {
   resize: none;
 }
 
+.contact input[type=submit] {
+  margin-top: 10px;
+}
+
 input[type=text].medium {
   width: 180px;
 }
@@ -121,18 +170,27 @@ input[type=text].large {
   width: 210px;
 }
 
+.contact .subtext {
+  padding: 20px 0;
+}
+
 div.footer {
-  background: #ccc;
+  background: #36535a;
+  color: #f2eadc;
   position: relative;
   padding: 40px 0;
   margin-top: 60px;
 }
 
+div.footer ul a {
+  color: #788991;
+}
+
 div.footer li {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 div.footer ul li a {
-  padding: 5px;
+  padding: 10px;
 }
 }
