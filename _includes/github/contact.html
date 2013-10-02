@@ -1,0 +1,35 @@
+<div class="row contact">
+  <div class="col-md-3">
+    <h2>Do you like me?</h2>
+    <div>
+      <ul class="nav nav-pills">
+        <li class="active"><a href="#" class="gotta-have-it">Yes</a></li>
+        <li><a href="#" class="you-smell">No</a></li>
+        <li><a href="#" class="maybe-next-time">Maybe</a></li>
+      </ul>
+    </div>
+    <div class="subtext">
+      I'd love to chat no matter what you think. Please get a hold of me either way. Love is like a virus. It can happen to anybody at any time.
+    </div>
+  </div>
+  <div class="col-md-8 col-md-offset-1">
+    {% include github/yes-form.html %}
+    {% include github/no-form.html %}
+    {% include github/maybe-form.html %}
+  </div>
+</div>
+
+<script>
+  $(function() {
+    $(".contact .nav li a").on("click", function(event) {
+      var li = $(this).parent("li");
+      li.siblings().removeClass("active");
+      li.addClass("active");
+      var className = li.children("a").attr("class");
+      $(".contact form").hide();
+      $("form." + className).show();
+      $("form." + className + " input[type=text]:first").focus();
+      event.preventDefault();
+    });
+  });
+</script>

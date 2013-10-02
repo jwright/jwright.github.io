@@ -6,6 +6,7 @@
 }
 
 .footer-pusher {
+  height: 180px;
   clear: both;
 }
 
@@ -100,7 +101,7 @@ span.large {
   font-weight: bold;
 }
 
-.introduction h2, .contact h2 {
+.introduction h2, .contact h2, .thanks h2 {
   color: #788991;
   font-family: "proxima-nova-soft";
   font-style: italic;
@@ -116,7 +117,7 @@ span.large {
   font-size: 1.4em;
 }
 
-.introduction .reason {
+.introduction .reason, .thanks .reason {
   font-family: "source-sans-pro";
   color: #788991;
 }
@@ -133,7 +134,7 @@ span.large {
   padding-top: 30px;
 }
 
-div.contact {
+div.contact, div.thanks {
   border-top: 5px solid #788991;
   padding-top: 20px;
   margin-top: 40px;
@@ -201,4 +202,12 @@ div.footer li {
 div.footer ul li a {
   padding: 10px;
 }
+
+div.thanks ul.destintations li {
+  font-size: 2em;
+  display: block;
+}
+
+div.thanks ul.destintations li a {
+  padding: 10px;
 }
