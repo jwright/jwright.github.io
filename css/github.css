@@ -101,7 +101,7 @@ span.large {
   font-weight: bold;
 }
 
-.introduction h2, .contact h2, .thanks h2 {
+.section h2 {
   color: #788991;
   font-family: "proxima-nova-soft";
   font-style: italic;
@@ -117,7 +117,7 @@ span.large {
   font-size: 1.4em;
 }
 
-.introduction .reason, .thanks .reason {
+.reason {
   font-family: "source-sans-pro";
   color: #788991;
 }
@@ -134,7 +134,7 @@ span.large {
   padding-top: 30px;
 }
 
-div.contact, div.thanks {
+div.contact, div.stats, div.thanks {
   border-top: 5px solid #788991;
   padding-top: 20px;
   margin-top: 40px;
@@ -179,7 +179,7 @@ input[type=text].large {
   width: 210px;
 }
 
-.contact .subtext {
+.subtext {
   padding: 20px 0;
 }
 
@@ -210,4 +210,33 @@ div.thanks ul.destintations li {
 
 div.thanks ul.destintations li a {
   padding: 10px;
+}
+
+.stat h2 {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial", sans-serif;
+  font-size: 15px;
+  color: #999;
+  text-transform: uppercase;
+  line-height: 1.1em;
+  margin: 0 0 6px;
+}
+
+.stat .data {
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", "Arial", sans-serif;
+  line-height: 0.7em;
+  color: #333;
+  font-size: 52px;
+}
+
+.stat .subtext {
+  padding: 0;
+  line-height: 2.1em;
+  color: #999;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.stats .seperator {
+  margin-top: 30px;
 }
